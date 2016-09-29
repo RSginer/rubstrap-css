@@ -1,108 +1,93 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <title>Example</title>
+        <title>CSS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body>
-        <main>
-            <header>
-                <h1 class="titulo">Ejercicios CSS</h1>
-            </header>
-            <section>
-                <header>
-                    <ul><li><h2>Botones</h2></li></ul>
-                </header>
-                <div class="fondo fondo--fondo_verde">
-                    <p class="texto texto--color_verde">
-                        ¡El cohete que menos contamina del universo!
-                        ¡El cohete que menos contamina del universo!¡El cohete que menos contamina del universo!
-
-                    </p>
-                    <p class="texto texto--color_verde">
-                        <a href="#" class="boton boton--boton_verde">Comprar cohetes</a>
-                    </p>
-                </div>
-            </section>
-            <img class="imagen" src="img/cohete-ecologico.jpg"/>
-            <section>
-                <div class="fondo fondo--fondo_azul">
-                    <p class="texto textoAzul">
-                        <a href="#" class="boton boton--boton_azul">Cohetes Chinos</a>
-                    </p>
-                    <p class="texto texto--texto_azul">
-                        ¡Los chinos ya tienen una flota entera de cohetes ecologicos!
-                        ¡Los chinos ya tienen una flota entera de cohetes ecologicos!
-                        ¡Los chinos ya tienen una flota entera de cohetes ecologicos!
-                    </p>
-                </div>
-            </section>
-            <!-- <section>
-                 <header>
-                     <ul><li><h2>Bordes y box-sizing</h2></li></ul>
-                 </header>
-                 <div class="caja-con-sizing">
-                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                 </div>
-                 <div class="caja-sin-sizing">
-                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                 </div>
-             </section>
-             <br>-->
-            <section>
-                <header>
-                    <ul><li><h2>Tabla</h2></li></ul>
-                </header>
-                <div class="capa-de-tabla">
-                    <table class="tabla-con-estilo">
-                        <tr class="cabecera-amarilla">
-                            <th class="cabecera">0</th>
-                            <th class="cabecera">1</th>
-                            <th class="cabecera">2</th>
-                            <th class="cabecera">3</th>
-                            <th class="cabecera">4</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-        </main>
-
+        <h1>Estilos CSS:</h1>
+        <ul><li><h2>Paneles:</h2></li></ul>
+        <div class="panel">
+            <div class="panel__cabecera ">
+                Cabecera de panel sin modificador
+            </div>
+            <div class="panel__panel-body ">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <br>
+           <div class="panel panel__panel--primary">
+            <div class="panel__cabecera panel__cabecera--primary">
+                Cabecera de panel Primary
+            </div>
+            <div class="panel__panel-body panel__panel-body--primary">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel__panel--danger">
+            <div class="panel__cabecera panel__cabecera--danger">
+                Cabecera de panel Danger
+            </div>
+            <div class="panel__panel-body panel__panel-body--danger">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <br>
+          <div class="panel panel__panel--warning">
+            <div class="panel__cabecera panel__cabecera--warning">
+                Cabecera de panel Info
+            </div>
+            <div class="panel__panel-body panel__panel-body--warning">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel__panel--success">
+            <div class="panel__cabecera panel__cabecera--success">
+                Cabecera de panel Success
+            </div>
+            <div class="panel__panel-body panel__panel-body--success">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel__panel--info">
+            <div class="panel__cabecera panel__cabecera--info">
+                Cabecera de panel Info
+            </div>
+            <div class="panel__panel-body panel__panel-body--info">
+                <p class="panel__parrafo">
+                    Contenido<br>
+                    Más contenido
+                </p>
+            </div>
+        </div>
+        <ul><li><h2>Mensajes:</h2></li></ul>
+        <div class="mensaje">
+            Mensaje sin modificador
+        </div>
     </body>
 </html>

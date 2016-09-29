@@ -1,96 +1,107 @@
-html body{
-    padding:0px;
-    margin:0px;
-    font-family: Arial, Helvetica;
-}
-.titulo{
-    text-align: center;
-}
-.texto{
-    margin-bottom: 20px;
-    float:left;
-    width:50%;
-}
-
-.boton{
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 20px;
-}
-.texto--color_verde{
-    color: #86C98A;
-}
-.boton--boton_verde{
-    background-color: #86C98A;
-    color:#004304;
-    border:2px solid #116416;
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-sep-2016, 8:51:49
+    Author     : alumno
+*/
+body{
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    background-color: white;
 }
 
-.fondo{
-    text-align: center;
-    padding: 20px;
-    height: 80px;
-}
-.fondo--fondo_verde{
-    background-color: #2D8633;
+/* PANELES */
 
+.panel{
+    margin:0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px #ccc;
 }
-.texto--texto_azul{
-    color: #FFF;
+.panel__cabecera{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-color: #cccccc;
+    background-color: #DDD;
 }
-.boton--boton_azul{
-    background-color: #6B949E;
-    color:#012B35;
-    border:2px solid #012B35;
+.panel__panel-body{
+    background-color: white;
+    margin:0;
+    line-height: 160%;
+    padding:15px 15px;
+    border-bottom:1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
-.fondo--fondo_azul{
-    background-color: #255C69;
-}
-.imagen{
-   height: 300px;
-   min-width: 100%;
-}
-
-.caja-con-sizing{
-    width:200px;
-    border:5px solid black;
-    padding:15px;
-    float:left;
-    background-color: yellow;
-    box-sizing: border-box;
-    margin-right: 20px;
-}
-.caja-sin-sizing{
-    width:200px;
-    float:left;
-    border:5px solid black;
-    padding:15px;
-    background-color: yellow;
+.panel__parrafo{
+    margin: 0;
+    color:black;
 }
 
-.capa-de-tabla{
-    padding-left: 400px;
-    margin-bottom: 100px;
+/* estilos de paneles*/
+.panel__panel--danger{
+    box-shadow: 2px 2px 20px #ebccd1;
 }
+.panel__panel-body--danger{
+    border-color: #ebccd1;
+}
+.panel__cabecera--danger{
+    background-color: #f2dede;
+    color:#a94442;
+    border-color: #ebccd1;
+}
+.panel__panel--primary{
+    box-shadow: 2px 2px 20px #337ab7;
+}
+.panel__cabecera--primary{
+    background-color: #337ab7;
+    color:white;
+    border-color: #337ab7;
+}
+.panel__panel-body--primary{
+    border-color: #337ab7;
+}
+.panel__panel--success{
+    box-shadow: 2px 2px 20px #dff0d8;
+}
+.panel__cabecera--success{
+    background-color: #dff0d8;
+    color:#3c763d;
+    border-color: #d6e9c6;
+}
+.panel__panel-body--success{
+    border-color: #d6e9c6;
+}
+.panel__panel--info{
+    box-shadow: 2px 2px 20px #d9edf7;
+}
+.panel__cabecera--info{
+    background-color: #d9edf7;
+    color:#3677a9;
+    border-color: #bce8f1;
+}
+.panel__panel-body--info{
+    border-color: #bce8f1;
+}
+.panel__panel--warning{
+    box-shadow: 2px 2px 20px #d9edf7;
+}
+.panel__cabecera--warning{
+    background-color: #fcf8e3;
+    color:#8d6d3b;
+    border-color: #faebcc;
+}
+.panel__panel-body--warning{
+    border-color: #faebcc;
+}
+/* MENSAJES*/
 
-.tabla-con-estilo{
-    border-radius: 10px;
-    border:1px solid black;
-    text-align: center;
- 
-}
-.cabecera{
-    background-color: #DDD999;
-    padding: 20px;
-    border-radius: 5px;
-    
-}
-.cabecera-amarilla{
-     background-color: #DDD999;
-}
-.tabla-con-estilo , td{
-    background-color: gray;
-    border:2px solid red;
-    border-collapse: collapse;
+.mensaje{
+
 }
