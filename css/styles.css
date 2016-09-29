@@ -20,7 +20,7 @@ body{
     border-radius: 4px;
     box-shadow: 2px 2px 20px #ccc;
 }
-.panel__cabecera{
+.panel__header{
     padding: 10px 15px;
     border: 1px solid;
     border-top-left-radius: 4px;
@@ -39,7 +39,7 @@ body{
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
-.panel__parrafo{
+.panel__p{
     margin: 0;
     color:black;
 }
@@ -51,7 +51,7 @@ body{
 .panel__panel-body--danger{
     border-color: #ebccd1;
 }
-.panel__cabecera--danger{
+.panel__header--danger{
     background-color: #f2dede;
     color:#a94442;
     border-color: #ebccd1;
@@ -59,7 +59,7 @@ body{
 .panel__panel--primary{
     box-shadow: 2px 2px 20px #337ab7;
 }
-.panel__cabecera--primary{
+.panel__header--primary{
     background-color: #337ab7;
     color:white;
     border-color: #337ab7;
@@ -70,7 +70,7 @@ body{
 .panel__panel--success{
     box-shadow: 2px 2px 20px #dff0d8;
 }
-.panel__cabecera--success{
+.panel__header--success{
     background-color: #dff0d8;
     color:#3c763d;
     border-color: #d6e9c6;
@@ -81,7 +81,7 @@ body{
 .panel__panel--info{
     box-shadow: 2px 2px 20px #d9edf7;
 }
-.panel__cabecera--info{
+.panel__header--info{
     background-color: #d9edf7;
     color:#3677a9;
     border-color: #bce8f1;
@@ -92,7 +92,7 @@ body{
 .panel__panel--warning{
     box-shadow: 2px 2px 20px #d9edf7;
 }
-.panel__cabecera--warning{
+.panel__header--warning{
     background-color: #fcf8e3;
     color:#8d6d3b;
     border-color: #faebcc;
