@@ -121,31 +121,147 @@ body{
 .message{
     padding:15px;
     font-size: 16px;
-    background-color:#cccccc;
+    background-color:#e6e6e6;
     border-radius: 4px;
+    color:#6d6d6d;
     margin: 2px;
     display:inline-block;
 }
 
+/* Estilos de mensaje*/
+
 .message--primary{
-    background-color: #337ab7;
-    color:white;
+    background-color: #a9c4dc;
+    color:#285e8c;
 }
 
 .message--danger{
-    background-color: #d9534f;
-    color:white;
+    background-color: #f2dede;
+    color:#a94442;
+    border-color: #ebccd1;
 }
 .message--warning{
-    background-color: #f0ad4e;
-    color:white;
+    background-color: #fcf8e3;
+    color:#8d6d3b;
 }
 .message--success{
-    background-color: #5cb85c;
-    color:white;
+    background-color: #dff0d8;
+    color:#3c763d;
+    border-color: #d6e9c6;
 }
 
 .message--info{
-    background-color:#5bc0de;
+    background-color:#d9edf7;
+    color:#3677a9;
+}
+
+/* BOTONES */
+
+.btn{
+    text-decoration: none;
+    color:#000;
+    cursor: pointer;
+    font-size: 14px;
+    margin:2px;
+    padding: 10px;
+    background-color: #cccccc;
+    border: 1px solid #b9b9b9;
+    border-radius: 6px;
+}
+.btn:hover{
+    background-color: #b9b9b9;
+    -webkit-transition-duration: 0.2s;
+}
+.btn:active{
+    box-shadow: inset 0px 5px 15px 3px #AAA; 
+}
+
+/*Tamaños botones*/
+.btn--xs{
+    padding: 2px;
+    font-size:10px;
+    border-radius: 3px;
+}
+.btn--s{
+    padding: 5px;
+    font-size:12px;
+    border-radius: 4px;
+}
+.btn--m{
+    padding: 10px;
+    font-size:14px;
+    border-radius: 6px;
+}
+.btn--l{
+    padding: 12px;
+    font-size:16px;
+    border-radius: 6px;
+}
+.btn--xl{
+    padding: 15px;
+    font-size:18px;
+    border-radius: 6px;
+}
+.btn--xxl{
+    padding: 20px;
+    font-size:22px;
+    border-radius: 6px;
+}
+/*Estilos de botones*/
+
+.btn--primary{
+    background-color: #337ab7;
+    border-color: #2f6594;
     color:white;
 }
+.btn--primary:hover{
+    background-color: #2f6594;
+}
+.btn--primary:active{
+    box-shadow: inset 0px 5px 15px 3px #275379; 
+}
+.btn--danger{
+    background-color: #d9534f;
+    border-color: #c74c48;
+    color:white;
+}
+.btn--danger:hover{
+    background-color: #c74c48;
+}
+.btn--danger:active{
+    box-shadow: inset 0px 5px 15px 3px #b34441; 
+}
+.btn--warning{
+    background-color: #f0ad4e;
+    border-color: #e09933;
+    color:white;
+}
+.btn--warning:hover{
+    background-color: #e09933;
+}
+.btn--warning:active{
+    box-shadow: inset 0px 5px 15px 3px #ca8a2f; 
+}
+.btn--success{
+    background-color: #5cb85c;
+    border-color: #55a955;
+    color:white;
+}
+.btn--success:hover{
+    background-color: #55a955;
+}
+.btn--success:active{
+    box-shadow: inset 0px 5px 15px 3px #4e9a4e; 
+}
+.btn--info{
+    background-color: #5bc0de;
+    border-color: #45b1d2;
+    color:white;
+}
+.btn--info:hover{
+    background-color: #45b1d2;
+}
+.btn--info:active{
+    box-shadow: inset 0px 5px 15px 3px #41a5c3; 
+}
+
