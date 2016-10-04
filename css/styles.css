@@ -20,6 +20,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     Created on : 29-sep-2016, 8:51:49
     Author     : Ruben Soler
 */
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: Arial,Helvetica;
     font-size: 14px;
@@ -112,8 +115,37 @@ body{
 .panel__panel-body--warning{
     border-color: #faebcc;
 }
+
 /* MENSAJES*/
 
-.mensaje{
+.message{
+    padding:15px;
+    font-size: 16px;
+    background-color:#cccccc;
+    border-radius: 4px;
+    margin: 2px;
+    display:inline-block;
+}
 
+.message--primary{
+    background-color: #337ab7;
+    color:white;
+}
+
+.message--danger{
+    background-color: #d9534f;
+    color:white;
+}
+.message--warning{
+    background-color: #f0ad4e;
+    color:white;
+}
+.message--success{
+    background-color: #5cb85c;
+    color:white;
+}
+
+.message--info{
+    background-color:#5bc0de;
+    color:white;
 }
