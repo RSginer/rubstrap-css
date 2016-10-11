@@ -24,7 +24,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     box-sizing: border-box;
 }
 body{
-    font-family: Arial,Helvetica;
+    font-family: Raleway,Arial,Helvetica;
     font-size: 14px;
     background-color: white;
 }
@@ -34,7 +34,7 @@ body{
 .panel{
     margin:0;
     border-radius: 4px;
-    box-shadow: 2px 2px 20px #ccc;
+    box-shadow: 1px 1px 2px #ccc;
 }
 .panel__header{
     padding: 10px 15px;
@@ -61,7 +61,7 @@ body{
 }
 /* Estilos de paneles*/
 .panel__panel--danger{
-    box-shadow: 2px 2px 20px #ebccd1;
+    box-shadow: 1px 1px 2px #ebccd1;
 }
 .panel__panel-body--danger{
     border-color: #ebccd1;
@@ -72,7 +72,7 @@ body{
     border-color: #ebccd1;
 }
 .panel__panel--primary{
-    box-shadow: 2px 2px 20px #337ab7;
+    box-shadow: 1px 1px 2px #337ab7;
 }
 .panel__header--primary{
     background-color: #337ab7;
@@ -83,7 +83,7 @@ body{
     border-color: #337ab7;
 }
 .panel__panel--success{
-    box-shadow: 2px 2px 20px #dff0d8;
+    box-shadow: 1px 1px 2px #dff0d8;
 }
 .panel__header--success{
     background-color: #dff0d8;
@@ -94,7 +94,7 @@ body{
     border-color: #d6e9c6;
 }
 .panel__panel--info{
-    box-shadow: 2px 2px 20px #d9edf7;
+    box-shadow: 1px 1px 2px #d9edf7;
 }
 .panel__header--info{
     background-color: #d9edf7;
@@ -105,7 +105,7 @@ body{
     border-color: #bce8f1;
 }
 .panel__panel--warning{
-    box-shadow: 2px 2px 20px #d9edf7;
+    box-shadow: 1px 1px 2px #d9edf7;
 }
 .panel__header--warning{
     background-color: #fcf8e3;
@@ -158,6 +158,7 @@ body{
 /* BOTONES */
 
 .btn{
+    font-family: Raleway,Arial,Helvetica;
     text-decoration: none;
     color:#000;
     cursor: pointer;
@@ -268,7 +269,6 @@ body{
 /* BARRA DE HERRAMIENTAS*/
 
 .nav-tool__item{
-    font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
     float:left;
     cursor:pointer;
     list-style: none;    
@@ -279,7 +279,6 @@ body{
     border-left:1px solid #605151;
     border-bottom:1px solid #605151;
     word-wrap: break-word;
-    
 }
 
 .nav-tool__item:hover{
@@ -304,4 +303,60 @@ body{
     border-left:1px solid #AAA;  
 }
 /* PAGINACION */
+.pagination{
+    
+}
+
+.pagination__page{
+    float:left;
+    cursor:pointer;
+    list-style: none;    
+    padding:10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-top:1px solid #00394a;
+    border-left:1px solid #00394a;
+    border-bottom:1px solid #00394a;
+
+    word-wrap: break-word;
+}
+
+.pagination__page:hover{
+    background-color: #EEE;
+    border-left:1px solid #AAA;
+        color:#0081a9;
+    border-top:1px solid #AAA;
+    border-bottom:1px solid #AAA;
+}
+
+.pagination__page:first-child:before{
+    content:' \f0a5';
+    font-family: FontAwesome;
+}
+
+.pagination__page:last-child:before{
+    content:'\f0a4';
+    font-family: FontAwesome;
+}
+
+.pagination__page:first-child{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+.pagination__page:last-child{
+    border-right:1px solid #00394a;  
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination__page:last-child:hover{
+    border-right:1px solid #AAA;  
+}
+
+.pagination__page:hover + li{
+    border-left:1px solid #AAA;  
+}
+/* MENU*/
 
