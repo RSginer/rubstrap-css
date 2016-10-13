@@ -360,4 +360,11 @@ body{
     border-left:1px solid #AAA;  
 }
 /* MENU*/
-
+.menu{
+    background-color: #4d5158;
+    padding:20px;
+    font-size: 22px;
+}
+.menu__item{
+    padding:5px;
+}

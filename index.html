@@ -15,9 +15,16 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 
         <style>
+            html{
+                background-color: #CCC;
+            }
             body{
-                width: 920px;
+                width: 1024px;
+                padding:20px 20px;
+                margin-top: 40px;
+                margin-bottom: 40px;
                 margin-left: auto;
+                background-color: white;
                 margin-right:auto;
             }
             h1.titulo{
@@ -203,8 +210,31 @@ and open the template in the editor.
             <li class="pagination__page"></li>
         </ul>
         <br>
-        <br>        <br><br>
+        <br><br><br>
         <ul><li class="ejemplo"><h2>Menu desplegable</h2></li></ul>
+        <br>
+        <ul class="menu">
+            <li class="menu__item"> Item 1 <span class="item__acordion-icon item__acordion-icon--open"></span>
+                <ul class="menu__menu-1">
+                    <li class="menu-1__item">Sub-item 1</li>
+                    <li class="menu-1__item">Sub-item 2</li>
+                    <li class="menu-1__item">Thing 1</li>
+                    <li class="menu-1__item">Thing 2</li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                Item 2 <span class="item__acordion-icon item__acordion-icon--open"></span>
+                <ul class="menu__menu-1">
+                    <li class="menu-1__item">Sub-Item in item 2</li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                Item 3 <span class="item__acordion-icon item__acordion-icon--close"></span>
+            </li>
+            <li class="menu__item">
+                 Item 3 <span class="item__acordion-icon item__acordion-icon--close"></span>
+            </li>
+        </ul>
        <!--[if lt IE 9] 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
