@@ -163,6 +163,7 @@ body{
     color:#000;
     cursor: pointer;
     font-size: 14px;
+    word-break: keep-all;
     margin:2px;
     padding: 10px;
     background-color: #cccccc;
