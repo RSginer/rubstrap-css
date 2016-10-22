@@ -1,0 +1,38 @@
+/* MENSAJES*/
+
+.message{
+    padding:15px;
+    font-size: 16px;
+    background-color:#e6e6e6;
+    border-radius: 4px;
+    color:#6d6d6d;
+    margin: 2px;
+    display:inline-block;
+}
+
+/* Estilos de mensaje*/
+
+.message--primary{
+    background-color: #a9c4dc;
+    color:#285e8c;
+}
+
+.message--danger{
+    background-color: #f2dede;
+    color:#a94442;
+    border-color: #ebccd1;
+}
+.message--warning{
+    background-color: #fcf8e3;
+    color:#8d6d3b;
+}
+.message--success{
+    background-color: #dff0d8;
+    color:#3c763d;
+    border-color: #d6e9c6;
+}
+
+.message--info{
+    background-color:#d9edf7;
+    color:#3677a9;
+}
