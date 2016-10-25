@@ -1,27 +1,58 @@
 /* BOTONES */
+@mixin format-btn-base($color, $font){
+    background-color: $color;
+    color:$font;
+    border: 1px solid darken($color,20%);
+}
+@mixin format-btn-hovers($color){
+    background-color: darken($color,5%);
+    -webkit-transition-duration: 0.2s;
+}
+@mixin format-btn-active($color){
+    box-shadow: inset 0px 5px 15px 3px darken($color,20%); 
+}
 
+@mixin tamanyos-btn($operador){
+        padding: $operador*4px;
+        font-size: $operador*8px;
+}
 .btn{
     font-family: Raleway,Arial,Helvetica;
     text-decoration: none;
-    color:#000;
     cursor: pointer;
-    font-size: 14px;
-    word-break: keep-all;
     margin:2px;
-    padding: 10px;
-    background-color: #cccccc;
-    border: 1px solid #b9b9b9;
+    @include tamanyos-btn(2);
+    @include format-btn-base($default,#000);
     border-radius: 6px;
 }
 .btn:hover{
-    background-color: #b9b9b9;
-    -webkit-transition-duration: 0.2s;
+    @include format-btn-hovers($default);
 }
 .btn:active{
-    box-shadow: inset 0px 5px 15px 3px #AAA; 
+    @include format-btn-active($default);
+}
+/* Estilos de botones */
+@each $colores, $color in $colores {
+    .btn--#{$colores} {
+        @include format-btn-base($color, white);
+        &:active{
+            @include format-btn-active($color);
+        }
+        &:hover {
+            @include format-btn-hovers($color);
+        }    
+    }
 }
 
+$tamanyos:(xs),(s),(m),(l),(xl),(xxl);
 /*Tamaños botones*/
+@for $i from 1 through length($tamanyos){
+    .btn--#{nth($tamanyos,$i)}){
+        @include tamanyos-btn($i);
+    }
+}
+
+/*
 .btn--xs{
     padding: 2px;
     font-size:10px;
@@ -51,61 +82,4 @@
     padding: 20px;
     font-size:22px;
     border-radius: 6px;
-}
-/*Estilos de botones*/
-
-.btn--primary{
-    background-color: #337ab7;
-    border-color: #2f6594;
-    color:white;
-}
-.btn--primary:hover{
-    background-color: #2f6594;
-}
-.btn--primary:active{
-    box-shadow: inset 0px 5px 15px 3px #275379; 
-}
-.btn--danger{
-    background-color: #d9534f;
-    border-color: #c74c48;
-    color:white;
-}
-.btn--danger:hover{
-    background-color: #c74c48;
-}
-.btn--danger:active{
-    box-shadow: inset 0px 5px 15px 3px #b34441; 
-}
-.btn--warning{
-    background-color: #f0ad4e;
-    border-color: #e09933;
-    color:white;
-}
-.btn--warning:hover{
-    background-color: #e09933;
-}
-.btn--warning:active{
-    box-shadow: inset 0px 5px 15px 3px #ca8a2f; 
-}
-.btn--success{
-    background-color: #5cb85c;
-    border-color: #55a955;
-    color:white;
-}
-.btn--success:hover{
-    background-color: #55a955;
-}
-.btn--success:active{
-    box-shadow: inset 0px 5px 15px 3px #4e9a4e; 
-}
-.btn--info{
-    background-color: #5bc0de;
-    border-color: #45b1d2;
-    color:white;
-}
-.btn--info:hover{
-    background-color: #45b1d2;
-}
-.btn--info:active{
-    box-shadow: inset 0px 5px 15px 3px #41a5c3; 
-}
+}*/

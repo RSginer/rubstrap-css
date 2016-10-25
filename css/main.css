@@ -581,110 +581,129 @@ body {
 .btn {
   font-family: Raleway,Arial,Helvetica;
   text-decoration: none;
-  color: #000;
   cursor: pointer;
-  font-size: 14px;
-  word-break: keep-all;
   margin: 2px;
-  padding: 10px;
-  background-color: #cccccc;
-  border: 1px solid #b9b9b9;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #DDDDDD;
+  color: #000;
+  border: 1px solid #aaaaaa;
   border-radius: 6px; }
 
 .btn:hover {
-  background-color: #b9b9b9;
+  background-color: #d0d0d0;
   -webkit-transition-duration: 0.2s; }
 
 .btn:active {
-  box-shadow: inset 0px 5px 15px 3px #AAA; }
+  box-shadow: inset 0px 5px 15px 3px #aaaaaa; }
 
-/*Tamaños botones*/
-.btn--xs {
-  padding: 2px;
-  font-size: 10px;
-  border-radius: 3px; }
-
-.btn--s {
-  padding: 5px;
-  font-size: 12px;
-  border-radius: 4px; }
-
-.btn--m {
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 6px; }
-
-.btn--l {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 6px; }
-
-.btn--xl {
-  padding: 15px;
-  font-size: 18px;
-  border-radius: 6px; }
-
-.btn--xxl {
-  padding: 20px;
-  font-size: 22px;
-  border-radius: 6px; }
-
-/*Estilos de botones*/
+/* Estilos de botones */
 .btn--primary {
   background-color: #337ab7;
-  border-color: #2f6594;
-  color: white; }
-
-.btn--primary:hover {
-  background-color: #2f6594; }
-
-.btn--primary:active {
-  box-shadow: inset 0px 5px 15px 3px #275379; }
+  color: white;
+  border: 1px solid #1d4567; }
+  .btn--primary:active {
+    box-shadow: inset 0px 5px 15px 3px #1d4567; }
+  .btn--primary:hover {
+    background-color: #2d6da3;
+    -webkit-transition-duration: 0.2s; }
 
 .btn--danger {
   background-color: #d9534f;
-  border-color: #c74c48;
-  color: white; }
-
-.btn--danger:hover {
-  background-color: #c74c48; }
-
-.btn--danger:active {
-  box-shadow: inset 0px 5px 15px 3px #b34441; }
+  color: white;
+  border: 1px solid #a02622; }
+  .btn--danger:active {
+    box-shadow: inset 0px 5px 15px 3px #a02622; }
+  .btn--danger:hover {
+    background-color: #d43f3a;
+    -webkit-transition-duration: 0.2s; }
 
 .btn--warning {
-  background-color: #f0ad4e;
-  border-color: #e09933;
-  color: white; }
-
-.btn--warning:hover {
-  background-color: #e09933; }
-
-.btn--warning:active {
-  box-shadow: inset 0px 5px 15px 3px #ca8a2f; }
+  background-color: #337ab7;
+  color: white;
+  border: 1px solid #1d4567; }
+  .btn--warning:active {
+    box-shadow: inset 0px 5px 15px 3px #1d4567; }
+  .btn--warning:hover {
+    background-color: #2d6da3;
+    -webkit-transition-duration: 0.2s; }
 
 .btn--success {
   background-color: #5cb85c;
-  border-color: #55a955;
-  color: white; }
-
-.btn--success:hover {
-  background-color: #55a955; }
-
-.btn--success:active {
-  box-shadow: inset 0px 5px 15px 3px #4e9a4e; }
+  color: white;
+  border: 1px solid #357935; }
+  .btn--success:active {
+    box-shadow: inset 0px 5px 15px 3px #357935; }
+  .btn--success:hover {
+    background-color: #4cae4c;
+    -webkit-transition-duration: 0.2s; }
 
 .btn--info {
   background-color: #5bc0de;
-  border-color: #45b1d2;
-  color: white; }
+  color: white;
+  border: 1px solid #2390b0; }
+  .btn--info:active {
+    box-shadow: inset 0px 5px 15px 3px #2390b0; }
+  .btn--info:hover {
+    background-color: #46b8da;
+    -webkit-transition-duration: 0.2s; }
 
-.btn--info:hover {
-  background-color: #45b1d2; }
+/*Tamaños botones*/
+.btn--xs {
+  padding: 4px;
+  font-size: 8px; }
 
-.btn--info:active {
-  box-shadow: inset 0px 5px 15px 3px #41a5c3; }
+.btn--s {
+  padding: 8px;
+  font-size: 16px; }
 
+.btn--m {
+  padding: 12px;
+  font-size: 24px; }
+
+.btn--l {
+  padding: 16px;
+  font-size: 32px; }
+
+.btn--xl {
+  padding: 20px;
+  font-size: 40px; }
+
+.btn--xxl {
+  padding: 24px;
+  font-size: 48px; }
+
+/*
+.btn--xs{
+    padding: 2px;
+    font-size:10px;
+    border-radius: 3px;
+}
+.btn--s{
+    padding: 5px;
+    font-size:12px;
+    border-radius: 4px;
+}
+.btn--m{
+    padding: 10px;
+    font-size:14px;
+    border-radius: 6px;
+}
+.btn--l{
+    padding: 12px;
+    font-size:16px;
+    border-radius: 6px;
+}
+.btn--xl{
+    padding: 15px;
+    font-size:18px;
+    border-radius: 6px;
+}
+.btn--xxl{
+    padding: 20px;
+    font-size:22px;
+    border-radius: 6px;
+}*/
 /* BARRA DE HERRAMIENTAS*/
 .nav-tool__item {
   float: left;
