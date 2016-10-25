@@ -1,7 +1,8 @@
-$default:#DDDDDD;
-$primary:#337ab7;
-$danger:#d9534f;
-$warning:#337ab7;
-$success:#5cb85c;
-$info:#5bc0de;
-$colores:(primary, $primary),(danger,$danger),(warning, $warning),(success, $success),(info, $info);
+$default-color:#DDDDDD;
+$primary-color:#337ab7;
+$danger-color:#d9534f;
+$warning-color:#337ab7;
+$success-color:#5cb85c;
+$info-color:#5bc0de;
+$formatos:(primary, $primary-color),(danger,$danger-color),(warning, $warning-color),(success, $success-color),(info, $info-color);
+$tamanyos:(xs),(s),(m),(l),(xl),(xxl);

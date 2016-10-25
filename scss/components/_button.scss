@@ -1,85 +1,40 @@
-/* BOTONES */
 @mixin format-btn-base($color, $font){
     background-color: $color;
     color:$font;
     border: 1px solid darken($color,20%);
-}
-@mixin format-btn-hovers($color){
-    background-color: darken($color,5%);
-    -webkit-transition-duration: 0.2s;
-}
-@mixin format-btn-active($color){
-    box-shadow: inset 0px 5px 15px 3px darken($color,20%); 
+    &:hover{
+         background-color: darken($color,5%);
+        -webkit-transition-duration: 0.2s;
+    }
+    &:active{
+        box-shadow: inset 0px 5px 15px 3px darken($color,20%); 
+    }
 }
 
 @mixin tamanyos-btn($operador){
         padding: $operador*4px;
         font-size: $operador*8px;
 }
+
 .btn{
     font-family: Raleway,Arial,Helvetica;
     text-decoration: none;
     cursor: pointer;
     margin:2px;
     @include tamanyos-btn(2);
-    @include format-btn-base($default,#000);
+    @include format-btn-base($default-color,#000);
     border-radius: 6px;
 }
-.btn:hover{
-    @include format-btn-hovers($default);
-}
-.btn:active{
-    @include format-btn-active($default);
-}
-/* Estilos de botones */
-@each $colores, $color in $colores {
-    .btn--#{$colores} {
-        @include format-btn-base($color, white);
-        &:active{
-            @include format-btn-active($color);
-        }
-        &:hover {
-            @include format-btn-hovers($color);
-        }    
+
+
+@each $formato, $color in $formatos {
+    .btn--#{$formato} {
+        @include format-btn-base($color, white);    
     }
 }
 
-$tamanyos:(xs),(s),(m),(l),(xl),(xxl);
-/*Tamaños botones*/
 @for $i from 1 through length($tamanyos){
     .btn--#{nth($tamanyos,$i)}){
         @include tamanyos-btn($i);
     }
 }
-
-/*
-.btn--xs{
-    padding: 2px;
-    font-size:10px;
-    border-radius: 3px;
-}
-.btn--s{
-    padding: 5px;
-    font-size:12px;
-    border-radius: 4px;
-}
-.btn--m{
-    padding: 10px;
-    font-size:14px;
-    border-radius: 6px;
-}
-.btn--l{
-    padding: 12px;
-    font-size:16px;
-    border-radius: 6px;
-}
-.btn--xl{
-    padding: 15px;
-    font-size:18px;
-    border-radius: 6px;
-}
-.btn--xxl{
-    padding: 20px;
-    font-size:22px;
-    border-radius: 6px;
-}*/

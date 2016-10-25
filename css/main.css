@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -577,7 +576,6 @@ body {
   background-color: #d9edf7;
   color: #3677a9; }
 
-/* BOTONES */
 .btn {
   font-family: Raleway,Arial,Helvetica;
   text-decoration: none;
@@ -589,66 +587,62 @@ body {
   color: #000;
   border: 1px solid #aaaaaa;
   border-radius: 6px; }
+  .btn:hover {
+    background-color: #d0d0d0;
+    -webkit-transition-duration: 0.2s; }
+  .btn:active {
+    box-shadow: inset 0px 5px 15px 3px #aaaaaa; }
 
-.btn:hover {
-  background-color: #d0d0d0;
-  -webkit-transition-duration: 0.2s; }
-
-.btn:active {
-  box-shadow: inset 0px 5px 15px 3px #aaaaaa; }
-
-/* Estilos de botones */
 .btn--primary {
   background-color: #337ab7;
   color: white;
   border: 1px solid #1d4567; }
-  .btn--primary:active {
-    box-shadow: inset 0px 5px 15px 3px #1d4567; }
   .btn--primary:hover {
     background-color: #2d6da3;
     -webkit-transition-duration: 0.2s; }
+  .btn--primary:active {
+    box-shadow: inset 0px 5px 15px 3px #1d4567; }
 
 .btn--danger {
   background-color: #d9534f;
   color: white;
   border: 1px solid #a02622; }
-  .btn--danger:active {
-    box-shadow: inset 0px 5px 15px 3px #a02622; }
   .btn--danger:hover {
     background-color: #d43f3a;
     -webkit-transition-duration: 0.2s; }
+  .btn--danger:active {
+    box-shadow: inset 0px 5px 15px 3px #a02622; }
 
 .btn--warning {
   background-color: #337ab7;
   color: white;
   border: 1px solid #1d4567; }
-  .btn--warning:active {
-    box-shadow: inset 0px 5px 15px 3px #1d4567; }
   .btn--warning:hover {
     background-color: #2d6da3;
     -webkit-transition-duration: 0.2s; }
+  .btn--warning:active {
+    box-shadow: inset 0px 5px 15px 3px #1d4567; }
 
 .btn--success {
   background-color: #5cb85c;
   color: white;
   border: 1px solid #357935; }
-  .btn--success:active {
-    box-shadow: inset 0px 5px 15px 3px #357935; }
   .btn--success:hover {
     background-color: #4cae4c;
     -webkit-transition-duration: 0.2s; }
+  .btn--success:active {
+    box-shadow: inset 0px 5px 15px 3px #357935; }
 
 .btn--info {
   background-color: #5bc0de;
   color: white;
   border: 1px solid #2390b0; }
-  .btn--info:active {
-    box-shadow: inset 0px 5px 15px 3px #2390b0; }
   .btn--info:hover {
     background-color: #46b8da;
     -webkit-transition-duration: 0.2s; }
+  .btn--info:active {
+    box-shadow: inset 0px 5px 15px 3px #2390b0; }
 
-/*Tamaños botones*/
 .btn--xs {
   padding: 4px;
   font-size: 8px; }
@@ -673,37 +667,6 @@ body {
   padding: 24px;
   font-size: 48px; }
 
-/*
-.btn--xs{
-    padding: 2px;
-    font-size:10px;
-    border-radius: 3px;
-}
-.btn--s{
-    padding: 5px;
-    font-size:12px;
-    border-radius: 4px;
-}
-.btn--m{
-    padding: 10px;
-    font-size:14px;
-    border-radius: 6px;
-}
-.btn--l{
-    padding: 12px;
-    font-size:16px;
-    border-radius: 6px;
-}
-.btn--xl{
-    padding: 15px;
-    font-size:18px;
-    border-radius: 6px;
-}
-.btn--xxl{
-    padding: 20px;
-    font-size:22px;
-    border-radius: 6px;
-}*/
 /* BARRA DE HERRAMIENTAS*/
 .nav-tool__item {
   float: left;
