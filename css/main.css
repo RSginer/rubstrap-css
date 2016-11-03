@@ -744,11 +744,130 @@ body {
 .pagination__page:hover + li {
   border-left: 1px solid #AAA; }
 
-/* MENU*/
-.menu {
-  background-color: #4d5158;
-  padding: 20px;
-  font-size: 22px; }
+.top-bar {
+  height: 55px;
+  background-color: white;
+  padding: 5px 10px;
+  display: block; }
 
-.menu__item {
-  padding: 5px; }
+.top-bar__logo {
+  width: 50px;
+  margin-top: -2.5px;
+  float: left;
+  height: 50px; }
+
+.top-bar-menu-button {
+  font-size: 40px;
+  margin-right: 20px;
+  color: grey;
+  margin-left: -10px;
+  margin-top: -5px;
+  padding: 10px;
+  background-color: black;
+  float: left;
+  vertical-align: middle;
+  line-height: 25px; }
+
+.col-1 {
+  width: 8.33333%;
+  float: left;
+  height: 100%; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%;
+  float: left;
+  height: 100%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.col-3 {
+  width: 25%;
+  float: left;
+  height: 100%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.col-4 {
+  width: 33.33333%;
+  float: left;
+  height: 100%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%;
+  float: left;
+  height: 100%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.col-6 {
+  width: 50%;
+  float: left;
+  height: 100%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.col-7 {
+  width: 58.33333%;
+  float: left;
+  height: 100%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%;
+  float: left;
+  height: 100%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.col-9 {
+  width: 75%;
+  float: left;
+  height: 100%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.col-10 {
+  width: 83.33333%;
+  float: left;
+  height: 100%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%;
+  float: left;
+  height: 100%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.col-12 {
+  width: 100%;
+  float: left;
+  height: 100%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+.row {
+  clear: both; }
+
+.row:after {
+  content: '';
+  display: block;
+  clear: both; }

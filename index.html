@@ -13,229 +13,24 @@ and open the template in the editor.
         <link href="css/reset.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-
-        <style>
-            html{
-                background-color: #CCC;
-            }
-            body{
-                width: 1024px;
-                padding:20px 20px;
-                margin-top: 40px;
-                margin-bottom: 40px;
-                margin-left: auto;
-                background-color: white;
-                margin-right:auto;
-            }
-            h1.titulo{
-                font-size: 70px;
-                color:#222;
-                text-align: center;
-            }
-            li.ejemplo{
-                font-size: 30px;
-                color:#555;
-                list-style: none;
-                margin: 20px;
-            }
-        </style>
     </head>
     <body>
-        <h1 class="titulo">Rubstrap-CSS <i class="fa fa-smile-o"></i></h1>
-        <ul><li class="ejemplo"><h2>Paneles</h2></li></ul>
-        <div class="panel">
-            <div class="panel__header">
-                Cabecera de panel sin modificador
+        <div class="container" style="height: 800px">
+            <div class="row">
+                <div class="col-12 offset-2">
+             
+                    <div class="top-bar">
+                        <span class="top-bar-menu-button"><i class="fa fa-bars"></i></span>
+                        <img class="top-bar__logo" src="images/logo.png">
+                    </div>
+                </div>
             </div>
-            <div class="panel__panel-body ">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="panel panel__panel--primary">
-            <div class="panel__header panel__header--primary">
-                Cabecera de panel Primary
-            </div>
-            <div class="panel__panel-body panel__panel-body--primary">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
+            <div class="row" >
+                <div class="col-2" style="background-color:black;height:800px;"></div>
+                <div class="col-10"  style="background-color:grey;height: 800px" ></div>
             </div>
         </div>
-        <br>
-        <div class="panel panel__panel--danger">
-            <div class="panel__header panel__header--danger">
-                Cabecera de panel Danger
-            </div>
-            <div class="panel__panel-body panel__panel-body--danger">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="panel panel__panel--warning">
-            <div class="panel__header panel__header--warning">
-                Cabecera de panel Warning
-            </div>
-            <div class="panel__panel-body panel__panel-body--warning">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="panel panel__panel--success">
-            <div class="panel__header panel__header--success">
-                Cabecera de panel Success
-            </div>
-            <div class="panel__panel-body panel__panel-body--success">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="panel panel__panel--info">
-            <div class="panel__header panel__header--info">
-                Cabecera de panel Info
-            </div>
-            <div class="panel__panel-body panel__panel-body--info">
-                <p class="panel__parrafo">
-                    Contenido<br>
-                    Más contenido
-                </p>
-            </div>
-        </div>
-        <ul><li class="ejemplo"><h2>Mensajes</h2></li></ul>
-        <div class="message">
-            Mensaje sin modificador
-        </div>
-        <div class="message message--primary">
-            Mensaje Primary
-        </div>
-        <div class="message message--danger">
-            Mensaje Danger
-        </div>
-        <div class="message message--warning">
-            Mensaje Warning
-        </div>
-        <div class="message message--success">
-            Mensaje Success
-        </div>
-        <div class="message message--info">
-            Mensaje Info
-        </div>
-        <ul><li class="ejemplo"><h2>Botones</h2></li></ul>
-        <button class="btn">Boton default</button>
-        <a class="btn" href="#">Link btn default</a>
-        <button class="btn btn--primary">Boton primary</button>
-        <a class="btn btn--primary" href="#">Link btn primary</a>
-        <button class="btn btn--danger">Boton danger</button>
-        <a class="btn btn--danger" href="#">Link btn danger</a>
-        <button class="btn btn--warning">Boton warning</button>
-        <a class="btn btn--warning" href="#">Link&nbsp;btn&nbsp;warning</a>
-        <button class="btn btn--success">Boton success</button>
-        <a class="btn btn--success" href="#">Link btn success</a>
-        <button class="btn btn--info">Boton info</button>
-        <a class="btn btn--info" href="#">Link btn info</a>
-        <ul><li class="ejemplo"><ul><li><h3>Tamaños:</h3></li></ul></li></ul>
-        <button class="btn btn--xs ">Boton XS</button>
-        <button class="btn btn--s ">Boton S</button>
-        <button class="btn btn--m ">Boton M</button>
-        <button class="btn btn--l ">Boton L</button>
-        <button class="btn btn--xl ">Boton XL</button>
-        <button class="btn btn--xxl ">Boton XXL</button>
-        <br>
-        <button class="btn btn--xs btn--primary">Boton XS</button>
-        <button class="btn btn--s btn--primary">Boton S</button>
-        <button class="btn btn--m btn--primary">Boton M</button>
-        <button class="btn btn--l btn--primary">Boton L</button>
-        <button class="btn btn--xl btn--primary">Boton XL</button>
-        <button class="btn btn--xxl btn--primary">Boton XXL</button>
-        <br>
-        <button class="btn btn--xs btn--info">Boton XS</button>
-        <button class="btn btn--s btn--info">Boton S</button>
-        <button class="btn btn--m btn--info">Boton M</button>
-        <button class="btn btn--l btn--info">Boton L</button>
-        <button class="btn btn--xl btn--info">Boton XL</button>
-        <button class="btn btn--xxl btn--info">Boton XXL</button>
-        <br>
-        <button class="btn btn--xs btn--danger">Boton XS</button>
-        <button class="btn btn--s btn--danger">Boton S</button>
-        <button class="btn btn--m btn--danger">Boton M</button>
-        <button class="btn btn--l btn--danger">Boton L</button>
-        <button class="btn btn--xl btn--danger">Boton XL</button>
-        <button class="btn btn--xxl btn--danger">Boton XXL</button>
-        <br>
-        <button class="btn btn--xs btn--warning">Boton XS</button>
-        <button class="btn btn--s btn--warning">Boton S</button>
-        <button class="btn btn--m btn--warning">Boton M</button>
-        <button class="btn btn--l btn--warning">Boton L</button>
-        <button class="btn btn--xl btn--warning">Boton XL</button>
-        <button class="btn btn--xxl btn--warning">Boton XXL</button>
-        <br>
-        <button class="btn btn--xs btn--success">Boton XS</button>
-        <button class="btn btn--s btn--success">Boton S</button>
-        <button class="btn btn--m btn--success">Boton M</button>
-        <button class="btn btn--l btn--success">Boton L</button>
-        <button class="btn btn--xl btn--success">Boton XL</button>
-        <button class="btn btn--xxl btn--success">Boton XXL</button>
-        <br>
-        <ul><li class="ejemplo"><h2>Barra de herramientas</h2></li></ul>
-        <br>
-        <ul class="nav-tool">
-            <li class="nav-tool__item">Archivo</li>
-            <li class="nav-tool__item">Editar</li>
-            <li class="nav-tool__item">Ver</li>
-            <li class="nav-tool__item">Ayuda</li>
-        </ul>
-        <br><br><br>
-        <ul><li class="ejemplo"><h2>Paginador</h2></li></ul>
-        <br><br>
-        <ul class="pagination">
-            <li class="pagination__page"></li>
-            <li class="pagination__page">1</li>
-            <li class="pagination__page">2</li>
-            <li class="pagination__page">3</li>
-            <li class="pagination__page">4</li>
-            <li class="pagination__page">5</li>
-            <li class="pagination__page"></li>
-        </ul>
-        <br>
-        <br><br><br>
-        <ul><li class="ejemplo"><h2>Menu desplegable</h2></li></ul>
-        <br>
-        <ul class="menu">
-            <li class="menu__item"> Item 1 <span class="item__acordion-icon item__acordion-icon--open"></span>
-                <ul class="menu__menu-1">
-                    <li class="menu-1__item">Sub-item 1</li>
-                    <li class="menu-1__item">Sub-item 2</li>
-                    <li class="menu-1__item">Thing 1</li>
-                    <li class="menu-1__item">Thing 2</li>
-                </ul>
-            </li>
-            <li class="menu__item">
-                Item 2 <span class="item__acordion-icon item__acordion-icon--open"></span>
-                <ul class="menu__menu-1">
-                    <li class="menu-1__item">Sub-Item in item 2</li>
-                </ul>
-            </li>
-            <li class="menu__item">
-                Item 3 <span class="item__acordion-icon item__acordion-icon--close"></span>
-            </li>
-            <li class="menu__item">
-                 Item 3 <span class="item__acordion-icon item__acordion-icon--close"></span>
-            </li>
-        </ul>
-       <!--[if lt IE 9] 
+        <!--[if lt IE 9] 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
        <![endif]-->

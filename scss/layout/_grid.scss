@@ -1,0 +1,22 @@
+@for $i from 1 through 12 {
+  .col-#{$i} { 
+      width: (100/12 * $i)*1%;
+      float:left;
+      height: 100%;
+  }
+  
+  .offset-#{$i} {
+      margin-left: (100/12 * $i)*1%;
+  }
+}
+
+.row{
+    clear: both;
+}
+
+.row:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
