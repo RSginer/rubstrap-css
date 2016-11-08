@@ -17,7 +17,7 @@ and open the template in the editor.
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-12 shadow">
+                <div class="col-12 shadow-top">
                     <div class="top-bar">
                         <span class="top-bar-menu-button"><i class="fa fa-bars"></i></span>
                         <img alt="logo" class="top-bar__logo" src="images/logo.png">
@@ -31,8 +31,21 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="row">
-                <div class="col-2" style="background-color:lightgray;height:800px;"></div>
-                <div class="col-10"  style="background-color:#7EB1DC;height: 800px" ></div>
+                <div class="col-2 shadow-left-menu" style="height:800px;">
+                    <nav class="left-menu">
+                        <ul class="left-menu__list">
+                            <li class="left-menu__item left-menu__item--active">Dashboard
+                            
+                            </li>
+                            <li class="left-menu__item">Panels</li>
+                            <li class="left-menu__item">Messages</li>
+                            <li class="left-menu__item">Buttons</li>
+                            <li class="left-menu__item">Forms</li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                <div class="col-10"  style="height: 800px" ></div>
             </div>
         </div>
         <!--[if lt IE 9] 

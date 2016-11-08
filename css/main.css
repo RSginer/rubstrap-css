@@ -750,8 +750,15 @@ body {
   padding: 5px 10px;
   display: block; }
 
-.shadow {
-  box-shadow: 5px 0px 2px blue; }
+.shadow-top {
+  box-shadow: 5px 0px 10px darkslategray;
+  position: relative;
+  z-index: 1000; }
+
+.shadow-left-menu {
+  box-shadow: 0px 5px 10px darkslategray;
+  position: relative;
+  z-index: 500; }
 
 .top-bar__logo {
   width: 150px;
@@ -786,6 +793,21 @@ body {
 .top-menu__item--active {
   background: #337ab7;
   color: white; }
+
+.left-menu {
+  background-color: #122a3f;
+  height: 100%; }
+
+.left-menu__item {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #122a3f; }
+
+.left-menu__item--active {
+  background-color: #77acd9;
+  color: #122a3f; }
 
 .col-1 {
   width: 8.33333%;
