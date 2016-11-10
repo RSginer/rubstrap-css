@@ -32,10 +32,16 @@
 .top-menu__item{
     padding:8px 20px;
     display: inline;
+    border-radius: 4px;
     margin-top: -5px;
+    cursor:pointer;
     font-size: 18px;
+    &:hover{
+         background: darken($primary-color,20%);
+         color:white;
+    }
 }
 .top-menu__item--active{
-    background: $primary-color;
+    background: darken($primary-color,20%);
     color:white;
 }

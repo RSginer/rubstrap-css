@@ -774,11 +774,16 @@ body {
 .top-menu__item {
   padding: 8px 20px;
   display: inline;
+  border-radius: 4px;
   margin-top: -5px;
+  cursor: pointer;
   font-size: 18px; }
+  .top-menu__item:hover {
+    background: #1d4567;
+    color: white; }
 
 .top-menu__item--active {
-  background: #337ab7;
+  background: #1d4567;
   color: white; }
 
 .left-menu {
