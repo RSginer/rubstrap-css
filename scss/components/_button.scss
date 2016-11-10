@@ -21,7 +21,7 @@
     font-family: Raleway,Arial,Helvetica;
     text-decoration: none;
     cursor: pointer;
-    margin:2px;
+    margin:5px;
     @include tamanyos-btn(2);
     @include format-btn-base($default-color,#000);
     border-radius: 6px;

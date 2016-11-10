@@ -604,7 +604,7 @@ body {
   font-family: Raleway,Arial,Helvetica;
   text-decoration: none;
   cursor: pointer;
-  margin: 2px;
+  margin: 5px;
   padding: 8px;
   font-size: 16px;
   background-color: #DDDDDD;
@@ -638,14 +638,14 @@ body {
     box-shadow: inset 0px 5px 15px 3px #a02622; }
 
 .btn--warning {
-  background-color: #337ab7;
+  background-color: #f0ad4e;
   color: white;
-  border: 1px solid #1d4567; }
+  border: 1px solid #c77c11; }
   .btn--warning:hover {
-    background-color: #2d6da3;
+    background-color: #eea236;
     -webkit-transition-duration: 0.2s; }
   .btn--warning:active {
-    box-shadow: inset 0px 5px 15px 3px #1d4567; }
+    box-shadow: inset 0px 5px 15px 3px #c77c11; }
 
 .btn--success {
   background-color: #5cb85c;
@@ -854,16 +854,16 @@ body {
   from {
     margin-left: 0px; }
   top {
-    margin-left: -180px; } }
+    margin-left: -140px; } }
 
 .hide-left-menu {
   animation-name: hideLeft;
   animation-duration: 1s;
-  margin-left: -180px; }
+  margin-left: -140px; }
 
 @keyframes showLeft {
   from {
-    margin-left: -180px; }
+    margin-left: -140px; }
   top {
     margin-left: 0px; } }
 

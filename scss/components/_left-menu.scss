@@ -44,15 +44,15 @@
 }
 @keyframes hideLeft{
     from{margin-left:0px;}
-    top{margin-left:-180px;}
+    top{margin-left:-140px;}
 }
 .hide-left-menu{
     animation-name: hideLeft;
     animation-duration: 1s;
-    margin-left: -180px;
+    margin-left: -140px;
 }
 @keyframes showLeft{
-    from{margin-left:-180px;}
+    from{margin-left:-140px;}
     top{margin-left:0px;}
 }
 
