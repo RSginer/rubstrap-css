@@ -1,0 +1,16 @@
+.separator{
+    background: grey;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    height: 1.5px;
+    &:after{
+        content:" ";
+        width: 20%;
+        background: darken($primary-color,20%);
+        display: block;
+        height: 4px;
+        margin-top:-1.5px;
+    }
+}
+

@@ -1,7 +1,8 @@
 @import "base/_reset.scss";
+@import "abstract/_variables.scss";
 @import "base/_base.scss";
 @import "abstract/_mixins.scss";
-@import "abstract/_variables.scss";
+@import "components/_separator.scss";
 @import "components/_panel.scss";
 @import "components/_message.scss";
 @import "components/_button.scss";
