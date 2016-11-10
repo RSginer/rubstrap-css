@@ -19,7 +19,6 @@ and open the template in the editor.
                 <div class="col-12">
                     <div class="shadow-top">
                         <div class="top-bar">
-
                             <img alt="logo" class="top-bar__logo" src="images/logo.png">
                             <nav class="top-menu">
                                 <ul class="top-menu__list">
@@ -35,11 +34,12 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="row">
-                <div class="col-1">
-                    <div class="shadow-left-menu">
+                <div class="col-2" >
+                    <div class="shadow-left-menu hide-left-menu" id="left-menu">
                         <nav class="left-menu">
                             <ul class="left-menu__list">
-                                <span class="left-menu-button"><i class="fa fa-bars"></i></span>
+                                <span class="left-menu-button" id="left-menu-button"><i class="fa fa-bars"></i></span>
+                                <li class="left-menu__item"> <img alt="logo" class="left-menu__logo" src="images/logo.png"></li>
                                 <li class="left-menu__item left-menu__item--active">Dashboard
                                 </li>
                                 <li class="left-menu__item">Panels</li>
@@ -50,13 +50,12 @@ and open the template in the editor.
                         </nav>
                     </div>
                 </div>
-                <div class="col-11 offset-1">
+                <div class="col-12">
                     <main>
-                        <div class="col-12">
+                        <div class="col-12 hide-content" id="content">
                             <h1>Welcome back<span class="subtitle">.</span></h1>
                             <span class="separator"></span>
                             <button class="btn btn--xxl">JEJEJE</button>
-
                         </div>
                     </main>
                 </div>
@@ -66,5 +65,24 @@ and open the template in the editor.
        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
        <![endif]-->
+        <script>
+            window.onload = function () {
+                var leftMenu = document.getElementById('left-menu');
+                var buttonLeftMenu = document.getElementById('left-menu-button');
+                var content = document.getElementById('content');
+                var isVisible = true;
+                buttonLeftMenu.addEventListener('click', function () {
+                    if (isVisible) {
+                        leftMenu.className = "shadow-left-menu hide-left-menu";
+                        isVisible = false;
+                        content.className = "col-12  hide-content";
+                    }else{
+                        leftMenu.className = "shadow-left-menu show-left-menu";
+                        isVisible = true;
+                        content.className = "col-12  show-content";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

@@ -1,13 +1,13 @@
 .top-bar{
-    height: 55px;
     background-color: lighten($primary-color,70%);
     padding:0px 10px;
     display:block;
 }
 .shadow-top{
-    box-shadow: 5px 0px 10px darkslategray;
+    box-shadow: 5px 0px 10px grey;
     position: fixed;
     z-index: 1000;
+    background-color: white;
     width: 100%;
     
 }
@@ -17,11 +17,12 @@
     margin-top: -2.5px;
     float: left;
     height: 50px;
+    margin-left: 2%;
 }
 
 .top-menu{
     float:right;
-    padding-right:150px;
+    margin-right: 2%;
     line-height: 46px;
 }
 
