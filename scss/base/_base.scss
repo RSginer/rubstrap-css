@@ -4,10 +4,7 @@ body{
     background-color: white;
 }
 
-hr:after{
-    content:"";
-    width: 20%;
-    height: 4px;
-    background: $primary-color;
-       
+.subtitle{
+    font-weight: bold;
+    color:$primary-color;
 }

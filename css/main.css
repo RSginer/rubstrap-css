@@ -458,11 +458,9 @@ body {
   font-size: 14px;
   background-color: white; }
 
-hr:after {
-  content: "";
-  width: 20%;
-  height: 4px;
-  background: #337ab7; }
+.subtitle {
+  font-weight: bold;
+  color: #337ab7; }
 
 .separator {
   background: grey;
@@ -475,8 +473,10 @@ hr:after {
     width: 20%;
     background: #1d4567;
     display: block;
-    height: 4px;
-    margin-top: -1.5px; }
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 3px;
+    margin-top: -1px; }
 
 /* PANELES */
 .panel {
@@ -795,7 +795,7 @@ hr:after {
   cursor: pointer;
   font-size: 18px; }
   .top-menu__item:hover {
-    background: #1d4567;
+    background: #337ab7;
     color: white; }
 
 .top-menu__item--active {
@@ -955,5 +955,4 @@ main {
 
 .container {
   margin-left: auto;
-  margin-right: auto;
-  height: 800px; }
+  margin-right: auto; }
