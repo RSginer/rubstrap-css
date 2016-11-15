@@ -6,4 +6,4 @@ $success-color:#5cb85c;
 $info-color:#5bc0de;
 $formatos:(primary, $primary-color),(danger,$danger-color),(warning, $warning-color),(success, $success-color),(info, $info-color);
 $tamanyos:(xs),(s),(m),(l),(xl),(xxl);
-$resposive-tamanyos:(s,576px),(m,768px),(l,992px);
+$resposive-tamanyos:(xs,0px,575px),(s,576px,767px),(m,768px,991px),(l,992px,999999px);

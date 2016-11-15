@@ -1,26 +1,32 @@
+
 @mixin calculaGrid($label){
     @for $i from 1 through 12 {
         .col-#{$label}-#{$i} { 
             width: (100/12 * $i)*1%;
             float:left;
             height: 100%;
+            &::after{
+                content:'';
+                clear:both;
+            }
         }
-
         .offset-#{$label}-#{$i} {
             margin-left: (100/12 * $i)*1%;
-        }
+        }   
+    }
+
+}
+
+@each $label, $tamanyo,$tamanyo-max in $resposive-tamanyos {
+    @media (min-width: $tamanyo){
+        @include calculaGrid($label);
+             }
+    @media (min-width: $tamanyo) and (max-width:$tamanyo-max){
         .hidden-#{$label}{
             display:none;
         }
-        
     }
 }
-@each $label, $tamanyo in $resposive-tamanyos {
-    @media (max-width: $tamanyo){
-        @include calculaGrid($label);
-    }
-}
-
 
 .row{
     clear: both;
