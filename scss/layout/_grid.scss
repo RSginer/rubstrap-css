@@ -9,10 +9,14 @@
         .offset-#{$label}-#{$i} {
             margin-left: (100/12 * $i)*1%;
         }
+        .hidden-#{$label}{
+            display:none;
+        }
+        
     }
 }
 @each $label, $tamanyo in $resposive-tamanyos {
-    @media (min-width: $tamanyo){
+    @media (max-width: $tamanyo){
         @include calculaGrid($label);
     }
 }
@@ -29,7 +33,6 @@
 }
 
 main{
-    margin-top: 50px;
     padding: 50px 60px;
 }
 
