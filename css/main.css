@@ -872,36 +872,15 @@ body {
   animation-duration: 1s;
   margin-left: 0px; }
 
-@keyframes showContent {
-  from {
-    margin-left: 0px; }
-  to {
-    margin-left: 140px; } }
-
-.show-content {
-  animation-name: showContent;
-  animation-duration: 1s;
-  margin-left: 140px; }
-  .show-content:after {
-    content: "";
-    height: 100%;
-    display: block;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4); }
-
-@keyframes hideContent {
-  from {
-    margin-left: 140px; }
-  to {
-    margin-left: 0px; } }
-
-.hide-content {
-  animation-name: hideContent;
-  animation-duration: 1s;
-  margin-left: 0px; }
+.show-content:after {
+  content: "";
+  height: 100%;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); }
 
 .left-menu__logo {
   width: 120px; }

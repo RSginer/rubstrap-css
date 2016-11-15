@@ -62,14 +62,8 @@
     animation-duration: 1s;
     margin-left: 0px;
 }
-@keyframes showContent{
-    from{margin-left:0px}
-    to{margin-left:140px}
-}
+
 .show-content{
-    animation-name: showContent;
-    animation-duration: 1s;
-    margin-left: 140px;
     &:after{
         content:"";
         height: 100%;
@@ -81,15 +75,7 @@
         background:rgba(0,0,0,0.4);
     }
 }
-@keyframes hideContent{
-    from{margin-left:140px}
-    to{margin-left:0px}
-}
-.hide-content{
-    animation-name: hideContent;
-    animation-duration: 1s;
-    margin-left: 0px;
-}
+
 .left-menu__logo{
     width: 120px;
 }
